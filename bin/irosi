@@ -1,0 +1,33 @@
+#!/usr/bin/env ruby
+require "irosi"
+require 'optparse'
+
+options = {}
+option_parser = OptionParser.new do |opts|
+  
+  opts.banner = 'here is help messages of rosi command line tool.'
+	
+	options[:file] = Dir.getwd
+
+  opts.on('-n NAME', '--alburmnum Name', type="string",'download one alburnm with num') do |value|
+    options[:num] = value
+  end
+	
+  opts.on('-b begin', '--begin begin','download one alburnm with num') do |value|
+    options[:begin] = value
+  end
+	
+  opts.on('-e end', '--end end','download one alburnm with num') do |value|
+    options[:end] = value
+  end
+	
+	
+  opts.on('-f file', '--file file','download one alburnm with num') do |value|
+    options[:file] = value
+  end
+	 
+end.parse!
+
+# puts options.inspect
+
+Irosi.parse(options);
