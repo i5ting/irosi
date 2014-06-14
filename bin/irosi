@@ -9,18 +9,17 @@ option_parser = OptionParser.new do |opts|
 	
 	options[:file] = Dir.getwd
 
-  opts.on('-n NAME', '--alburmnum Name', type="string",'download one alburnm with num') do |value|
+  opts.on('-n NAME', '--alburmnum Name','download one alburnm with num') do |value|
     options[:num] = value
   end
 	
-  opts.on('-b begin', '--begin begin','download one alburnm with num') do |value|
+  opts.on('-b begin', '--begin begin','the first alburnm num for download') do |value|
     options[:begin] = value
   end
 	
-  opts.on('-e end', '--end end','download one alburnm with num') do |value|
+  opts.on('-e end', '--end end','the last alburnm num for download') do |value|
     options[:end] = value
   end
-	
 	
   opts.on('-f file', '--file file','download one alburnm with num') do |value|
     options[:file] = value
@@ -29,5 +28,4 @@ option_parser = OptionParser.new do |opts|
 end.parse!
 
 # puts options.inspect
-
 Irosi.parse(options);

@@ -3,10 +3,7 @@ require "irosi/download"
 
 module Irosi
   # Your code goes here...
-	
 	def self.parse(opts)
-		puts '2222'
-		puts opts.inspect
 		n = opts[:num]
 		b = opts[:begin]
 		e = opts[:end]

@@ -86,11 +86,3 @@ class Rosi
 	end
 		
 end 
-
-
-# way 1
-# server = Server.new
-# server.handle(/hello/i) { "Hello from server at #{Time.now}" } server.handle(/goodbye/i) { "Goodbye from server at #{Time.now}" } server.handle(/name is (\w+)/) { |m| "Nice to meet you #{m[1]}!" }
-# server.run
-
-# way 2
