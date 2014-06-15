@@ -26,6 +26,12 @@ Done installing documentation for irosi after 0 seconds
 1 gem installed
 ```
 
+this gem depend on 2 gems
+
+```
+gem install 'curb'
+gem install 'nokogiri'
+```
 
 ##  功能
 
@@ -84,6 +90,15 @@ end
 
 目前还比较简陋，欢迎反馈
 
+## history
+
+
+- v0.0.3
+	- 增加runtime dependency
+- v0.0.2
+	- optparse doc
+- v0.0.1
+	- init
 
 ## Contributing
 
